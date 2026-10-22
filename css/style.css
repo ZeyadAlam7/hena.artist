@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.artist-carousel {
+    position: relative;
+
+    padding: 0 45px;
+}
+
+.artist-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.artist-track::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.artist-card {
+    position: relative;
+    flex: 0 0 calc((100% - 60px) / 4);
+    aspect-ratio: 4 / 3;
+    scroll-snap-align: start;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.artist-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.artist-name {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 90%;
+    padding: 10px 4px;
+    background: #dce8c8;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .artist-card {
+        flex-basis: calc((100% - 20px) / 2);
+    }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .artist-carousel {
+        padding: 0 30px;
+    }
+
+    .artist-card {
+        flex-basis: 100%;
+    }
+
+    .artist-name {
+        font-size: 13px;
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* start eyes section */
+.card-view a {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.card-title {
+    font-size: 16px !important;
+    padding: 8px;
+    font-weight: 600;
+    margin-top: 3px;
+
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 18px;
+}
+
+.stars span {
+    color: #5fa8c5;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+
+.artist-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.artist-card img {
+    display: block;
+    border-radius: 10px;
+
+}
+
+.artist-n {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 85%;
+    background-color: #dce8e8;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* end eyes section */
+
+
+/* start new app section */
+
+
+.mobail-app {
+    background-image: url(../img/Rectangle\ 20.png), url(../img/Rectangle\ 19.png);
+    background-size: cover;
+    height: 450px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 15px;
+    padding: 25px;
+    padding-top: 40px;
+
+
+
+}
+
+.down-app:nth-of-type(2) {
+    background-color: #f5baba;
+}
+
+
+.new-app h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.new-app p {
+    font-size: 14px;
+}
+
+.new-app {
+    margin: auto;
+    text-align: center;
+
+}
+
+.m-box {
+    background-color: #d7f8f5;
+    position: relative;
+}
+
+.icon-box {
+    position: absolute;
+    left: 38%;
+    top: 81%;
+
+}
+
+/* end new app section */
+
+/* start about section */
+
+.about-henna {
+    margin-top: 30px;
+}
+
+.card-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+/* end about section */
+
+/* start footer home section */
+
+.icon {
+    background-color: #fae7e7;
+    font-size: 22px;
+
+}
+
+.hero {
+    font-size: 14px;
+}
+
+@media (max-width:576px) {
+    .hero {
+        text-align: center;
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    .icon {
+        position: absolute;
+
+        left: 16%;
+        justify-content: center !important;
+    }
+
+
+}
+
+.eved {
+    color: #fda8a8;
+}
+
+
+.content-link a {
+    font-size: 14px;
+}
+
+/* end footer home section */
